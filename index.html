@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -46,11 +47,11 @@
           </form>
 
           <div class="overview">
-            <h1>Dornbirn</h1>
+            <h1 id="city">New York</h1>
 
             <ul>
               <li>Friday 10:49</li>
-              <li>Broken clouds</li>
+              <li id="description">Broken clouds</li>
             </ul>
           </div>
 
@@ -61,13 +62,14 @@
                   src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
                 />
 
-                <strong>10</strong> <span> °C | <a href="#">°F</a> </span>
+                <strong id="temperature">10</strong>
+                <span> °C | <a href="#">°F</a> </span>
               </div>
             </div>
             <div class="col-6 description">
               <ul>
-                <li>Humidity: 81%</li>
-                <li>Wind: 1km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>

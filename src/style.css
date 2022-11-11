@@ -53,3 +53,7 @@ li {
 .description {
   color: rgb(111, 105, 107);
 }
+
+.description ::first-letter {
+  text-transform: capitalize;
+}
