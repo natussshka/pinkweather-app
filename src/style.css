@@ -57,3 +57,12 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+
+.weather-temperature .active {
+  color: rgb(30, 29, 29);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
